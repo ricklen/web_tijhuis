@@ -4,15 +4,32 @@ body {
     color: #333;
 }
 
+/* FIX: Changed max-width from 20% to 100% so images can actually fill their containers */
 .img-fluid {
-    max-width: 20%;
+    max-width: 100%;
     height: auto;
 }
+
 /* Header styles */
 header {
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     padding: 0.5rem 0;
+}
+
+/* Specific fix for your Logo so it stays a reasonable size since we changed .img-fluid */
+.navbar-brand img {
+    max-width: 200px; /* Adjust this to size your logo */
+    height: auto;
+}
+
+/* --- NEW STYLES FOR THE GARAGE IMAGE --- */
+.about-image img {
+    width: 100%;
+    height: 450px;     /* Forces a consistent height */
+    object-fit: cover; /* Crops the image instead of squishing it */
+    object-position: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 /* Logo styles */
@@ -24,7 +41,6 @@ header {
     color: #e63946;
     text-decoration: none;
 }
-
 .navbar-brand:hover {
     color: #c1121f;
 }
@@ -34,23 +50,19 @@ header {
     border: none;
     padding: 0.25rem 0.5rem;
 }
-
 .navbar-toggler:focus {
     box-shadow: none;
     outline: none;
 }
-
 .navbar-nav {
     align-items: center;
 }
-
 .navbar-nav .nav-link {
     color: #333;
     font-weight: 500;
     padding: 0.5rem 1rem;
     transition: color 0.3s;
 }
-
 .navbar-nav .nav-link:hover {
     color: #e63946;
 }
@@ -81,9 +93,8 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    margin-top: 76px; /* Increased to account for header height */
+    margin-top: 76px;
     position: relative;
-    /* Including all vendor prefixes for better cross-browser compatibility */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -95,7 +106,6 @@ header {
     border-color: #e63946;
     transition: background-color 0.3s, border-color 0.3s;
 }
-
 .btn-danger:hover {
     background-color: #c1121f;
     border-color: #c1121f;
@@ -110,11 +120,9 @@ header {
     padding: 1.5rem;
     box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
-
 .service-card:hover {
     transform: translateY(-10px);
 }
-
 .service-icon {
     font-size: 3rem;
     color: #e63946;
@@ -125,7 +133,7 @@ header {
 .services, .about, .contact, footer {
     position: relative;
     z-index: 1;
-    background-color: #fff; /* Ensures content background is opaque */
+    background-color: #fff;
     padding: 3rem 0;
 }
 
@@ -141,29 +149,24 @@ footer {
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
-
 footer a {
     color: #ddd;
     text-decoration: none;
     transition: color 0.3s;
 }
-
 footer a:hover {
     color: #e63946;
     text-decoration: none;
 }
-
 footer h3 {
     font-size: 1.3rem;
     margin-bottom: 1.5rem;
     color: #fff;
 }
-
 footer ul {
     list-style: none;
     padding-left: 0;
 }
-
 footer ul li {
     margin-bottom: 0.5rem;
 }
@@ -172,8 +175,8 @@ footer ul li {
 @media (max-width: 768px) {
     .hero {
         height: 60vh;
-        background-attachment: scroll; /* Better for mobile */
-        margin-top: 66px; /* Adjusted for smaller header */
+        background-attachment: scroll;
+        margin-top: 66px;
     }
     
     .hero-content h1 {
@@ -181,13 +184,12 @@ footer ul li {
     }
     
     .logo {
-        font-size: 1.2rem; /* Smaller text on mobile */
+        font-size: 1.2rem;
     }
-}
 
-/* For very small screens */
-@media (max-width: 360px) {
-    .logo {
-        font-size: 1rem; /* Even smaller on very small screens */
+    /* Adjust garage image height for mobile so it's not too tall */
+    .about-image img {
+        height: 300px;
+        margin-bottom: 20px;
     }
 }
