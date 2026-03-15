@@ -10,4 +10,5 @@ git config --global core.autocrlf input
 git config --global user.name "$GIT_NAME"
 git config --global user.email "$GIT_EMAIL"
 git config --global credential.useHttpPath true
+npm install -g http-server
 

@@ -9,7 +9,8 @@ RUN apt-get update \
     && apt-get upgrade --yes \
     && apt-get install --yes \
     software-properties-common \
-    dos2unix
+    dos2unix \
+    npm && npm install -g http-server
 
 # Install Python 3.12
 RUN add-apt-repository ppa:deadsnakes/ppa \

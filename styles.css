@@ -38,11 +38,11 @@ header {
     align-items: center;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #e63946;
+    color: #003366;
     text-decoration: none;
 }
 .navbar-brand:hover {
-    color: #c1121f;
+    color: #002244;
 }
 
 /* Navbar styles */
@@ -64,7 +64,7 @@ header {
     transition: color 0.3s;
 }
 .navbar-nav .nav-link:hover {
-    color: #e63946;
+    color: #003366;
 }
 
 /* Make sure the navbar expands correctly on mobile */
@@ -102,13 +102,13 @@ header {
 
 /* Custom button styles */
 .btn-danger {
-    background-color: #e63946;
-    border-color: #e63946;
+    background-color: #003366;
+    border-color: #003366;
     transition: background-color 0.3s, border-color 0.3s;
 }
 .btn-danger:hover {
-    background-color: #c1121f;
-    border-color: #c1121f;
+    background-color: #002244;
+    border-color: #002244;
 }
 
 /* Services section */
@@ -125,7 +125,7 @@ header {
 }
 .service-icon {
     font-size: 3rem;
-    color: #e63946;
+    color: #003366;
     margin-bottom: 1rem;
 }
 
@@ -155,7 +155,7 @@ footer a {
     transition: color 0.3s;
 }
 footer a:hover {
-    color: #e63946;
+    color: #003366;
     text-decoration: none;
 }
 footer h3 {
