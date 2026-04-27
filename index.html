@@ -39,7 +39,6 @@
             background: var(--white);
             line-height: 1.7;
         }
-
         /* =============================================
            UTILITY CLASSES
         ============================================= */
@@ -64,7 +63,6 @@
             margin: 16px 0 24px;
         }
         .divider-center { margin-left: auto; margin-right: auto; }
-
         /* =============================================
            TOP BAR
         ============================================= */
@@ -87,7 +85,6 @@
             display: inline-block;
             vertical-align: middle;
         }
-
         /* =============================================
            NAVBAR
         ============================================= */
@@ -125,7 +122,6 @@
             background: var(--primary-dark) !important;
             color: var(--white) !important;
         }
-
         /* =============================================
            HERO SECTION
         ============================================= */
@@ -141,7 +137,7 @@
         .hero-bg {
             position: absolute;
             inset: 0;
-            background: url('voorkant_twentelaan.png') center center / cover no-repeat;
+            background: url('voorkant_twentelaan.jpeg') center center / cover no-repeat;
             transform: scale(1.04);
             transition: transform 8s ease;
         }
@@ -157,21 +153,6 @@
             );
         }
         .hero-content { position: relative; z-index: 2; color: var(--white); }
-        .hero-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(39,154,241,.15);
-            border: 1px solid rgba(39,154,241,.4);
-            color: var(--primary-light);
-            font-size: .78rem;
-            font-weight: 700;
-            letter-spacing: 1.5px;
-            text-transform: uppercase;
-            padding: 6px 16px;
-            border-radius: 50px;
-            margin-bottom: 20px;
-        }
         .hero-title {
             font-size: clamp(2.2rem, 5vw, 3.8rem);
             font-weight: 800;
@@ -243,7 +224,6 @@
             letter-spacing: .8px;
             margin-top: 4px;
         }
-
         /* =============================================
            USP STRIP
         ============================================= */
@@ -262,7 +242,6 @@
             height: 36px;
             background: rgba(255,255,255,.3);
         }
-
         /* =============================================
            ABOUT SECTION
         ============================================= */
@@ -311,57 +290,6 @@
             flex-shrink: 0;
             margin-top: 2px;
         }
-
-        /* =============================================
-           SERVICES SECTION
-        ============================================= */
-        .services-section { background: var(--light-grey); }
-        .service-card {
-            background: var(--white);
-            border-radius: var(--radius);
-            padding: 36px 28px;
-            height: 100%;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
-            border: 1px solid var(--border);
-            position: relative;
-            overflow: hidden;
-        }
-        .service-card::before {
-            content: '';
-            position: absolute;
-            bottom: 0; left: 0; right: 0;
-            height: 3px;
-            background: var(--primary);
-            transform: scaleX(0);
-            transition: var(--transition);
-        }
-        .service-card:hover {
-            transform: translateY(-6px);
-            box-shadow: var(--shadow-md);
-        }
-        .service-card:hover::before { transform: scaleX(1); }
-        .service-icon {
-            width: 64px;
-            height: 64px;
-            background: rgba(39,154,241,.1);
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            transition: var(--transition);
-        }
-        .service-card:hover .service-icon { background: var(--primary); }
-        .service-icon i {
-            font-size: 1.7rem;
-            color: var(--primary);
-            transition: var(--transition);
-        }
-        .service-card:hover .service-icon i { color: var(--white); }
-        .service-card h4 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
-        .service-card p  { font-size: .9rem; color: var(--mid); margin: 0; }
-
         /* =============================================
            CONTACT SECTION
         ============================================= */
@@ -409,7 +337,6 @@
             transition: var(--transition);
         }
         .contact-item-value a:hover { color: var(--primary); }
-
         /* Opening hours table */
         .hours-table { width: 100%; margin-top: 16px; }
         .hours-table tr { border-bottom: 1px solid var(--border); }
@@ -419,7 +346,6 @@
         .hours-table td:last-child { color: var(--mid); }
         .hours-table tr.open  td:last-child { color: #1a7a4a; font-weight: 700; }
         .hours-table tr.closed td:last-child { color: #999; }
-
         /* Map embed */
         .map-embed {
             width: 100%;
@@ -428,12 +354,11 @@
             border-radius: var(--radius);
             margin-top: 8px;
         }
-
         /* Quick contact cards */
         .why-card {
             display: flex;
             gap: 18px;
-            align-items: flex-start;
+            align-items: center;
             padding: 24px;
             border-radius: var(--radius);
             background: var(--white);
@@ -454,9 +379,8 @@
             flex-shrink: 0;
         }
         .why-icon i { color: var(--white); font-size: 1.3rem; }
-        .why-card h5 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+        .why-card h5 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
         .why-card p  { font-size: .875rem; color: var(--mid); margin: 0; }
-
         /* =============================================
            CTA BANNER
         ============================================= */
@@ -503,7 +427,6 @@
             color: var(--white);
             transform: translateY(-2px);
         }
-
         /* =============================================
            FOOTER
         ============================================= */
@@ -564,7 +487,6 @@
             margin-top: 48px;
         }
         .footer-bottom p { font-size: .8rem; margin: 0; }
-
         /* =============================================
            BACK TO TOP
         ============================================= */
@@ -589,7 +511,6 @@
         }
         #backToTop.visible { opacity: 1; transform: translateY(0); }
         #backToTop:hover  { background: var(--primary-dark); transform: translateY(-3px); }
-
         /* =============================================
            RESPONSIVE TWEAKS
         ============================================= */
@@ -652,7 +573,6 @@
             <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 py-3 py-lg-0">
                 <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#over-ons">Over Ons</a></li>
-                <li class="nav-item"><a class="nav-link" href="#diensten">Diensten</a></li>
                 <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 <li class="nav-item ms-lg-2">
                     <a class="nav-link btn-nav-cta" href="tel:0635608197">
@@ -673,10 +593,6 @@
     <div class="container hero-content">
         <div class="row">
             <div class="col-lg-8 col-xl-7">
-                <div class="hero-badge">
-                    <i class="bi bi-patch-check-fill"></i>
-                    Erkend Autobedrijf · Vroomshoop
-                </div>
                 <h1 class="hero-title">
                     Uw Auto in<br>
                     <span>Vakkundige Handen</span>
@@ -688,8 +604,8 @@
                     <a href="tel:0635608197" class="btn-hero-primary">
                         <i class="bi bi-telephone-fill me-2"></i>Maak een Afspraak
                     </a>
-                    <a href="#diensten" class="btn-hero-secondary">
-                        Onze Diensten<i class="bi bi-arrow-right ms-2"></i>
+                    <a href="#over-ons" class="btn-hero-secondary">
+                        Meer over ons<i class="bi bi-arrow-right ms-2"></i>
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -749,7 +665,7 @@
         <div class="row align-items-center g-5">
             <div class="col-lg-5">
                 <div class="about-img-wrapper">
-                    <img src="voorkant_twentelaan.png"
+                    <img src="sander_tijhuis.png"
                          alt="Tijhuis Automotive - Twentelaan 19 Vroomshoop">
                     <div class="about-experience-badge">
                         <div class="num">15+</div>
@@ -797,86 +713,6 @@
         </div>
     </div>
 </section>
-
-<!-- ================================================
-     DIENSTEN SECTION
-================================================ -->
-<section id="diensten" class="section-padding services-section">
-    <div class="container">
-        <div class="text-center mb-5">
-            <p class="text-primary-custom fw-bold small text-uppercase mb-1"
-               style="letter-spacing:1.5px;">Wat wij doen</p>
-            <h2 class="section-title">Onze Diensten</h2>
-            <div class="divider divider-center"></div>
-            <p class="section-subtitle mx-auto text-muted">
-                Van groot onderhoud tot kleine reparaties – bij Tijhuis Automotive bent u voor al uw automobielbehoefte aan het juiste adres.
-            </p>
-        </div>
-        <div class="row g-4">
-            <div class="col-sm-6 col-xl-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="bi bi-car-front-fill"></i></div>
-                    <h4>APK Keuring</h4>
-                    <p>Snelle en betrouwbare APK keuring. U ontvangt direct uitslag en helder advies over eventuele gebreken.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="bi bi-wrench-adjustable-circle-fill"></i></div>
-                    <h4>Groot & Klein Onderhoud</h4>
-                    <p>Periodiek onderhoud inclusief olie- en filterwissel, vloeistoffencheck en algemene inspectie van uw voertuig.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="bi bi-gear-wide-connected"></i></div>
-                    <h4>Motor & Versnellingsbak</h4>
-                    <p>Diagnose en reparatie van motorproblemen en aandrijflijnen. Wij lossen technische storingen vakkundig op.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="bi bi-disc-fill"></i></div>
-                    <h4>Remmen & Banden</h4>
-                    <p>Controle, vervanging en montage van remblokken, remschijven en banden voor uw veiligheid op de weg.</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="bi bi-lightning-charge-fill"></i></div>
-                    <h4>Elektrische Diagnose</h4>
-                    <p>Uitgebreide computermeting en diagnose van elektrische systemen, sensoren en storingscodes (OBD-II).</p>
-                </div>
-            </div>
-            <div class="col-sm-6 col-xl-4">
-                <div class="service-card">
-                    <div class="service-icon"><i class="bi bi-thermometer-sun"></i></div>
-                    <h4>Airconditioning</h4>
-                    <p>Controle, vullen en reparatie van uw airco-installatie. Rijdt u weer koel de zomer tegemoet.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ================================================
-     CTA BANNER
-================================================ -->
-<div class="cta-banner">
-    <div class="container text-center">
-        <h2 class="mb-3">Klaar voor een Afspraak?</h2>
-        <p class="mb-4">Bel ons direct of stuur een e-mail. Wij helpen u snel verder.</p>
-        <div class="d-flex flex-wrap gap-3 justify-content-center">
-            <a href="tel:0635608197" class="btn-cta-white">
-                <i class="bi bi-telephone-fill me-2"></i>+31 (0) 6 35 60 81 97
-            </a>
-            <a href="mailto:info@tijhuis-automotive.nl" class="btn-cta-outline">
-                <i class="bi bi-envelope-fill me-2"></i>Stuur een Email
-            </a>
-        </div>
-    </div>
-</div>
-
 <!-- ================================================
      CONTACT SECTION
 ================================================ -->
@@ -957,7 +793,7 @@
             </div>
             <!-- Map + Quick contact -->
             <div class="col-lg-7">
-                <div class="contact-card mb-4">
+                <div class="contact-card h-100 d-flex flex-column">
                     <h5 style="font-size:1.1rem;font-weight:700;">
                         <i class="bi bi-map-fill me-2 text-primary-custom"></i>Onze Locatie
                     </h5>
@@ -971,34 +807,37 @@
                     <a href="https://maps.google.com/?q=Twentelaan+19+7681NE+Vroomshoop"
                        target="_blank" rel="noopener"
                        class="btn-hero-primary mt-3"
-                       style="font-size:.875rem;padding:10px 22px;">
+                       style="font-size:.875rem;padding:10px 22px;align-self:flex-start;">
                         <i class="bi bi-map-fill me-2"></i>Open in Google Maps
                     </a>
-                </div>
-                <div class="row g-3">
-                    <div class="col-sm-6">
-                        <a href="tel:0635608197" style="text-decoration:none;">
-                            <div class="why-card" style="background:var(--dark);border-color:#1a1d1a;">
-                                <div class="why-icon"><i class="bi bi-telephone-fill"></i></div>
-                                <div>
-                                    <h5 style="color:var(--white);">Bel Direct</h5>
-                                    <p style="color:rgba(255,255,255,.55);">+31 (0) 6 35 60 81 97</p>
+                    <!-- Divider -->
+                    <hr style="border-color:var(--light);margin:1.25rem 0;">
+                    <!-- Bel Direct & Email Ons -->
+                    <div class="row g-3">
+                        <div class="col-sm-6 d-flex">
+                            <a href="tel:0635608197" style="text-decoration:none;width:100%;">
+                                <div class="why-card" style="background:var(--dark);border-color:#1a1d1a;">
+                                    <div class="why-icon"><i class="bi bi-telephone-fill"></i></div>
+                                    <div>
+                                        <h5 style="color:var(--white);">Bel Direct</h5>
+                                        <p style="color:rgba(255,255,255,.55);">+31 (0) 6 35 60 81 97</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-sm-6">
-                        <a href="mailto:info@tijhuis-automotive.nl" style="text-decoration:none;">
-                            <div class="why-card" style="background:var(--dark);border-color:#1a1d1a;">
-                                <div class="why-icon"><i class="bi bi-envelope-fill"></i></div>
-                                <div>
-                                    <h5 style="color:var(--white);">Email Ons</h5>
-                                    <p style="color:rgba(255,255,255,.55);font-size:.78rem;word-break:break-all;">
-                                        info@tijhuis-automotive.nl
-                                    </p>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 d-flex">
+                            <a href="mailto:info@tijhuis-automotive.nl" style="text-decoration:none;width:100%;">
+                                <div class="why-card" style="background:var(--dark);border-color:#1a1d1a;">
+                                    <div class="why-icon"><i class="bi bi-envelope-fill"></i></div>
+                                    <div>
+                                        <h5 style="color:var(--white);">Email Ons</h5>
+                                        <p style="color:rgba(255,255,255,.55);font-size:.78rem;word-break:break-all;">
+                                            info@tijhuis-automotive.nl
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1023,18 +862,17 @@
                 <ul class="footer-link-list">
                     <li><a href="#home"><i class="bi bi-chevron-right"></i>Home</a></li>
                     <li><a href="#over-ons"><i class="bi bi-chevron-right"></i>Over Ons</a></li>
-                    <li><a href="#diensten"><i class="bi bi-chevron-right"></i>Diensten</a></li>
                     <li><a href="#contact"><i class="bi bi-chevron-right"></i>Contact</a></li>
                 </ul>
             </div>
             <div class="col-sm-6 col-lg-3">
                 <h5>Diensten</h5>
                 <ul class="footer-link-list">
-                    <li><a href="#diensten"><i class="bi bi-chevron-right"></i>APK Keuring</a></li>
-                    <li><a href="#diensten"><i class="bi bi-chevron-right"></i>Onderhoud</a></li>
-                    <li><a href="#diensten"><i class="bi bi-chevron-right"></i>Remmen & Banden</a></li>
-                    <li><a href="#diensten"><i class="bi bi-chevron-right"></i>Elektrische Diagnose</a></li>
-                    <li><a href="#diensten"><i class="bi bi-chevron-right"></i>Airconditioning</a></li>
+                    <li><a href="#contact"><i class="bi bi-chevron-right"></i>APK Keuring</a></li>
+                    <li><a href="#contact"><i class="bi bi-chevron-right"></i>Onderhoud</a></li>
+                    <li><a href="#contact"><i class="bi bi-chevron-right"></i>Remmen & Banden</a></li>
+                    <li><a href="#contact"><i class="bi bi-chevron-right"></i>Elektrische Diagnose</a></li>
+                    <li><a href="#contact"><i class="bi bi-chevron-right"></i>Airconditioning</a></li>
                 </ul>
             </div>
             <div class="col-lg-3">
@@ -1098,15 +936,7 @@
 
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('#mainNav .nav-link');
-    new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                navLinks.forEach(l => l.classList.remove('active'));
-                const active = document.querySelector(`#mainNav .nav-link[href="#${entry.target.id}"]`);
-                if (active) active.classList.add('active');
-            }
-        });
-    }, { rootMargin: '-40% 0px -55% 0px' }).observe && sections.forEach(s =>
+    sections.forEach(s =>
         new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
